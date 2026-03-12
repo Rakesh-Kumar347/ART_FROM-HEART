@@ -1,4 +1,5 @@
-import { ArtCategory, ArtSize, FrameOption, Urgency } from "@/types/order";
+import { ArtSize, FrameOption, Urgency } from "@/types/order";
+import { ArtCategory } from "@/types/portfolio";
 import { PricingConfig } from "@/types/pricing";
 
 export const SITE_NAME = "Art From Heart";

@@ -34,9 +34,9 @@ export function analyzeAccessories(
     }
   }
 
-  const detectedAccessories = [
-    ...new Set(nearbyAccessories.map((a) => a.class)),
-  ];
+  const detectedAccessories = Array.from(
+    new Set(nearbyAccessories.map((a) => a.class))
+  );
   const accessoryCount = nearbyAccessories.length;
 
   // Score based on count

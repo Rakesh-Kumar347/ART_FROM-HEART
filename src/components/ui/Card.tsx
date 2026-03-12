@@ -21,7 +21,7 @@ export default function Card({
     hover || onClick
       ? {
           whileHover: { scale: 1.02, y: -2 },
-          transition: { type: "spring", stiffness: 300 },
+          transition: { type: "spring" as const, stiffness: 300 },
         }
       : {};
 

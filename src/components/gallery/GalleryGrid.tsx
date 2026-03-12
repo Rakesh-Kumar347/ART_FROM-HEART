@@ -16,9 +16,7 @@ const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.05,
-    },
+    transition: { staggerChildren: 0.05 },
   },
 };
 
@@ -60,13 +58,8 @@ export default function GalleryGrid({
   onItemClick,
   loading = false,
 }: GalleryGridProps) {
-  if (loading) {
-    return <SkeletonGrid />;
-  }
-
-  if (items.length === 0) {
-    return <EmptyState />;
-  }
+  if (loading) return <SkeletonGrid />;
+  if (items.length === 0) return <EmptyState />;
 
   return (
     <motion.div
